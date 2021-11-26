@@ -29,18 +29,18 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 async def start(client, message):
    buttons = [
             [
-                InlineKeyboardButton("❔ HOW TO USE ME ❔", callback_data="help"),
+                InlineKeyboardButton("💥 ᴛᴜᴛᴏʀɪᴀʟ 💥", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("📢 CHANNEL", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                InlineKeyboardButton("SOURCE 📦", url=f"https://github.com/zerosquad13/zerovideoplayer"),
+                InlineKeyboardButton("💥 ᴄʜᴀɴɴᴇʟ 💥", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                InlineKeyboardButton("💥 sᴏᴜʀᴄᴇ 💥", url=f"https://github.com/zerosquad13/zerovideoplayer"),
             ],
             [
-                InlineKeyboardButton("🤖 ABOUT", callback_data="about"),
-                InlineKeyboardButton("CLOSE 🔒", callback_data="close"),
+                InlineKeyboardButton("💥 ᴀʙᴏᴜᴛ 💥", callback_data="about"),
+                InlineKeyboardButton("ᴄʟᴏsᴇ 🔒", callback_data="close"),
             ],
             [
-               InlineKeyboardButton("➕ ADD ME TO YOUR GROUP ➕", url=f"https://t.me/{USERNAME}?startgroup=true"),
+               InlineKeyboardButton("➕ ᴀᴅᴅ sɪɴɴᴇʀ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url=f"https://t.me/{USERNAME}?startgroup=true"),
             ]
             ]
    reply_markup = InlineKeyboardMarkup(buttons)
@@ -57,8 +57,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     if query.data=="help":
         buttons = [
             [
-                InlineKeyboardButton("🔙 BACK", callback_data="start"),
-                InlineKeyboardButton ("SUPPORT 💬", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="start"),
+                InlineKeyboardButton ("sᴜᴘᴘᴏʀᴛ 💬", url=f"https://t.me/{SUPPORT_GROUP}"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -73,8 +73,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data=="about":
         buttons = [
             [
-                InlineKeyboardButton("🔙 BACK", callback_data="start"),
-                InlineKeyboardButton ("SUPPORT 💬", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="start"),
+                InlineKeyboardButton ("sᴜᴘᴘᴏʀᴛ 💬", url=f"https://t.me/{SUPPORT_GROUP}"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -89,18 +89,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data=="start":
         buttons = [
             [
-                InlineKeyboardButton("❔ HOW TO USE ME ❔", callback_data="help"),
+                InlineKeyboardButton("💥 ᴛᴜᴛᴏʀɪᴀʟ 💥", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("📢 CHANNEL", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                InlineKeyboardButton("SOURCE 📦", url=f"https://github.com/zerosquad13/zerovideoplayer"),
+                InlineKeyboardButton("💥 ᴄʜᴀɴɴᴇʟ 💥", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                InlineKeyboardButton("💥 sᴏᴜʀᴄᴇ 💥", url=f"https://github.com/zerosquad13/zerovideoplayer"),
             ],
             [
-                InlineKeyboardButton("🤖 ABOUT", callback_data="about"),
-                InlineKeyboardButton("CLOSE 🔒", callback_data="close"),
+                InlineKeyboardButton("💥 ᴀʙᴏᴜᴛ 💥", callback_data="about"),
+                InlineKeyboardButton("ᴄʟᴏsᴇ 🔒", callback_data="close"),
             ],
             [
-               InlineKeyboardButton("➕ ADD ME TO YOUR GROUP ➕", url=f"https://t.me/{USERNAME}?startgroup=true"),
+               InlineKeyboardButton("➕ ᴀᴅᴅ sɪɴɴᴇʀ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url=f"https://t.me/{USERNAME}?startgroup=true"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
